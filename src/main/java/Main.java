@@ -38,7 +38,7 @@ public class Main {
 
         JFrame frame = new PkmnScripterFrame();
 
-        frame.setSize(500, 500 );
+        frame.setSize(800, 800 );
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }

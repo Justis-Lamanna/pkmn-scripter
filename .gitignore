@@ -1,4 +1,4 @@
 .idea/
 pkmnscripter.iml
-./target/
-./src/main/resources/flex-class/
+/target/
+/src/main/resources/flex-class/

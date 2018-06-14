@@ -1,4 +1,4 @@
-package editor;
+package lucbui.pkmnscripter.editor;
 
 import javax.swing.*;
 import java.awt.*;

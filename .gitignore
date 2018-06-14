@@ -2,3 +2,6 @@
 pkmnscripter.iml
 /target/
 /src/main/resources/flex-class/
+*.class
+/dist/
+/flex/

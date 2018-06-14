@@ -1,12 +1,10 @@
-import editor.PkmnScripterFrame;
+import lucbui.pkmnscripter.editor.PkmnScripterFrame;
 
 import javax.swing.*;
 import java.io.FileInputStream;
 import java.io.InputStream;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 import java.util.Properties;
-import editor.*;
+import lucbui.pkmnscripter.editor.*;
 
 public class Main {
 

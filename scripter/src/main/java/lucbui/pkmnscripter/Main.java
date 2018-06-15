@@ -1,10 +1,13 @@
-import lucbui.pkmnscripter.editor.PkmnScripterFrame;
+package lucbui.pkmnscripter;
+
+import lucbui.pkmnscripter.editor.*;
 
 import javax.swing.*;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Properties;
-import lucbui.pkmnscripter.editor.*;
+import lucbui.pkmnscripter.editor.Popups;
+import lucbui.pkmnscripter.editor.ScripterGraphics;
 
 public class Main {
 
@@ -21,6 +24,7 @@ public class Main {
         } catch (Exception e) {
             Popups.debugPopup("Unexpected Error", "There was an unexpected error encountered.", e);
         }
+
     }
 
     /**

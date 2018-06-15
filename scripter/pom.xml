@@ -6,7 +6,12 @@
 
     <groupId>pkmn-scripter</groupId>
     <artifactId>pkmn-scripter</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>lexer</module>
+        <module>scripter</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -19,6 +24,13 @@
             <groupId>com.jtattoo</groupId>
             <artifactId>JTattoo</artifactId>
             <version>1.6.11</version>
+        </dependency>
+
+        <!--Lexer library-->
+        <dependency>
+            <groupId>lucbui.pkmnscripter</groupId>
+            <artifactId>lexer</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
     </dependencies>

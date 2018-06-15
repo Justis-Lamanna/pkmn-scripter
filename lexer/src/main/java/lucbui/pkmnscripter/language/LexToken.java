@@ -9,14 +9,14 @@ public class LexToken {
     private int column;
     private LexType type;
 
-    public LexToken(Object value, int line, int column, LexType type) {
+    public LexToken(LexType type, int line, int column, Object value) {
         this.value = value;
         this.line = line;
         this.column = column;
         this.type = type;
     }
 
-    public LexToken(int line, int column, LexType type) {
+    public LexToken(LexType type, int line, int column) {
         this.line = line;
         this.column = column;
         this.type = type;

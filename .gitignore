@@ -1,7 +1,6 @@
 .idea/
 pkmnscripter.iml
-/target/
-/src/main/resources/flex-class/
 *.class
-/dist/
-/flex/
+/lexer/src/main/java/lucbui/pkmnscripter/flex
+/lexer/dist
+/scripter/dist

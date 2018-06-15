@@ -1,5 +1,8 @@
-/* JFlex example: partial Java language lexer specification */
-import lucbui.pkmnscripter.language.*;
+/* XSE Grammar */
+package lucbui.pkmnscripter.flex;
+
+import lucbui.pkmnscripter.language.LexToken;
+import lucbui.pkmnscripter.language.LexType;
 
 /**
     * This class is a simple example lexer.
@@ -24,9 +27,9 @@ import lucbui.pkmnscripter.language.*;
 
 %function nextToken
 %type LexToken
-%eof{
+%eofval{
     return symbol(LexType.EOF);
-%eof}
+%eofval}
 %debug
 
 %%

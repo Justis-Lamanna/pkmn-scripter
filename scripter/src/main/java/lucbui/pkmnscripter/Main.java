@@ -11,7 +11,7 @@ import lucbui.pkmnscripter.editor.ScripterGraphics;
 
 public class Main {
 
-    public static String UI_PROPERTIES_FILE = "pkmn-scripter.properties";
+    private static String UI_PROPERTIES_FILE = "pkmn-scripter.properties";
 
     /**
      * Starts the Pkmn Scripter.
@@ -41,7 +41,7 @@ public class Main {
         JFrame frame = new PkmnScripterFrame();
 
         frame.setSize(800, 800 );
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }
 

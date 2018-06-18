@@ -5,11 +5,33 @@ package lucbui.pkmnscripter.language;
  */
 public enum LexType {
     COMMAND,
-    STRING,
     BYTE,
     WORD,
     DOUBLEWORD,
-    COMMENT,
-    CONSTANT,
-    EOF
+    MEMORYADDRESS,
+    EOF,
+    //Preprocessor Directives
+    ALIAS,
+    AUTOBANK,
+    BRAILLE,
+    BREAK,
+    CLEAN,
+    DEFINE,
+    DEFINELIST,
+    DYNAMIC,
+    ERASE,
+    ERASERANGE,
+    FREESPACE,
+    INCLUDE,
+    ORG,
+    RAW,
+    REMOVE,
+    REMOVEALL,
+    REMOVEMART,
+    REMOVEMOVE,
+    RESERVE,
+    UNALIAS,
+    UNALIASALL,
+    UNDEFINE,
+    UNDEFINEALL
 }

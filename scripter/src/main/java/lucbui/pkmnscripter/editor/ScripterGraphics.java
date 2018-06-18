@@ -60,9 +60,12 @@ public class ScripterGraphics {
     private static String getLookAndFeel(String laf, String theme) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         String qualifiedClassName = getFullyQualifiedClassName(laf);
         Class<LookAndFeel> lookAndFeel = (Class<LookAndFeel>) Class.forName(qualifiedClassName);
+        //Invoking this method with empty strings allows you to remove the "JTattoo" logo displayed on dropdowns
+        Method setTheme = lookAndFeel.getMethod("setTheme", String.class, String.class, String.class);
         if (theme != null) {
-            Method setTheme = lookAndFeel.getMethod("setTheme", String.class);
-            setTheme.invoke(null, theme);
+            setTheme.invoke(null, theme, "", "");
+        } else {
+            setTheme.invoke(null, "Default", "", "");
         }
         return qualifiedClassName;
     }
